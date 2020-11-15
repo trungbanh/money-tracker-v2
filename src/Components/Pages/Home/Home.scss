@@ -1,0 +1,26 @@
+.toolbar-top {
+    display: flex;
+    flex-direction: row;
+}
+
+.toolbar-headline{
+    min-width: 100px;
+    flex: 1 1 0px;
+}
+
+.title-page {
+    color: #34373d;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.subtitle-page {
+    color: #505050;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 600;
+}

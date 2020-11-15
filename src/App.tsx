@@ -1,13 +1,16 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import AppRouter from './AppRouter';
 import AppHeader from './Components/Header/AppHeader';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App d-flex">
       <AppHeader/>
-      <AppRouter/>
+      <main className="content">
+        <div className="toolbar" />
+        <AppRouter/>
+      </main>
     </div>
   );
 }

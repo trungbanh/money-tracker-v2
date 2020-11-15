@@ -57,9 +57,6 @@ $drawerWidth : 240px;
     display: flex,
 }
 
-.hide{
-    display: 'none',
-}
 
 .appBar{
     z-index: 1201 !important;
@@ -77,13 +74,13 @@ $drawerWidth : 240px;
 }
 
 .hide{
-    display: 'none',
+    display: none,
 }
 
 .drawer {
     width: $drawerWidth;
     flex-shrink: 0;
-    white-space: 'nowrap';
+    white-space: nowrap;
 }
 
 .drawerOpen {
@@ -99,19 +96,6 @@ $drawerWidth : 240px;
     transition-duration: 0.5s;
     transition-timing-function: ease-out;
     overflow-x: hidden !important;
-}
-
-.toolbar{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 0 8px;
-    min-height: 56px;
-}
-
-.content {
-    flex-grow: 1;
-    padding: 1rem 1rem;
 }
 
 @media (min-width: 0px) and (orientation: landscape) {
@@ -137,9 +121,10 @@ $drawerWidth : 240px;
         margin-left: 3rem;
         width: auto;
     }
-    .drawerClose {
-        padding: 2px;
-    }
+    // .drawerClose {
+    //     padding: 0px;
+    //     margin: 0px;
+    // }
 }
 
 @media (max-width: 768px){
