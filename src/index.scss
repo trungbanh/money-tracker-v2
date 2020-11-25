@@ -20,3 +20,52 @@ code {
 .d-flex {
   display: flex;
 }
+
+.align-middle {
+  vertical-align: middle!important;
+}
+
+.pr-0 {
+  padding-right: 0rem;
+}
+
+.pr-1 {
+  padding-right: 1rem;
+}
+
+.pr-2 {
+  padding-right: 2rem;
+}
+
+.pl-0 {
+  padding-left: 0rem;
+}
+
+.pl-1 {
+  padding-left: 1rem;
+}
+
+.pl-2 {
+  padding-left: 2rem;
+}
+
+.text-button {
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+  color: #34373d;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  padding: 9px 12px;
+  border: none;
+  width: auto;
+  height: auto;
+  transition: background-color 100ms;
+  border-radius: 2px;
+  &:hover {
+    background-color: whitesmoke;
+  }
+  &:focus {
+    outline: none
+  }
+}

@@ -1,12 +1,20 @@
 import React from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
-import InputBase from '@material-ui/core/InputBase';
-import Badge from '@material-ui/core/Badge';
-import MenuItem from '@material-ui/core/MenuItem';
-import Menu from '@material-ui/core/Menu';
+import {AppBar,
+  Toolbar, 
+  IconButton, 
+  Typography, 
+  InputBase,
+  Badge,
+  MenuItem,
+  Menu,
+  Drawer,
+  List,
+  Divider,
+  ListItem,
+} from '@material-ui/core';
+import clsx from 'clsx';
+
+
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import AccountCircle from '@material-ui/icons/AccountCircle';
@@ -17,11 +25,6 @@ import FormatListNumberedTwoToneIcon from '@material-ui/icons/FormatListNumbered
 import AssessmentTwoToneIcon from '@material-ui/icons/AssessmentTwoTone';
 import AccountBalanceWalletTwoToneIcon from '@material-ui/icons/AccountBalanceWalletTwoTone';
 
-import clsx from 'clsx';
-import Drawer from '@material-ui/core/Drawer';
-import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
-import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 
@@ -142,7 +145,7 @@ export default function AppHeader() {
             </div>
             <InputBase
               placeholder="Search…"
-              className="inputRoot"
+              className=" inputRoot MuiInputBase-inputTypeSearch Mui-focused"
               inputProps={{ 'aria-label': 'search' }}
             />
           </div>

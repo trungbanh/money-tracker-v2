@@ -18,18 +18,15 @@ $drawerWidth : 240px;
 
 .search {
     border-radius: 3px;
-    background-color: white;
-    opacity: 0.15;
-    &:hover{
-        opacity: 0.55;
-    }
+    background-color: transparentize( white, 0.3);
     margin-right: 2rem;
     margin-left: 0rem;
-    width: 100%;
+    width: 120%;
     display: flex;
 }
 
 .searchIcon {
+    opacity: 1;
     color: black;
     height: 100%;
     margin: 0.2rem 0.5rem 0.2rem 0.5rem;
@@ -39,16 +36,15 @@ $drawerWidth : 240px;
     justify-content: center,
 }
 
-.inputRoot{
+.MuiInputBase-input{
     color: black;
+    &:focus {
+        width: 100%;
+        margin-left: 0.5rem;
+        margin-right: 1rem;
+    } 
 }
 
-.inputInput {
-    padding: 1rem 1rem;
-    padding-left: calc(1em + 5em);
-    transition: width;
-    width: 100%;  
-}
 .sectionDesktop {
     display: none,
 }
