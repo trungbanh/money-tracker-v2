@@ -1,12 +1,18 @@
+@import "~bootstrap/scss/bootstrap";
+
 .toolbar{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 0 8px;
+    padding: 0 4px;
     min-height: 56px;
 }
 
 .content {
     flex-grow: 1;
     padding: 1rem 1rem;
+}
+
+.full-screen {
+    height: 70vh;
 }

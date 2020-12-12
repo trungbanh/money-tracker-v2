@@ -1,6 +1,10 @@
 .toolbar-top {
     display: flex;
+    height: 2vh;
     flex-direction: row;
+    min-height: 56px;
+    padding-bottom: 0.1rem;
+    margin-bottom: 0.1rem;
 }
 
 .toolbar-headline{
@@ -13,22 +17,18 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
+    padding-bottom: 0.1rem;
 }
 
 .subtitle-page {
-    color: #505050;
+    color: #505050; 
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 1rem;
     font-weight: 600;
-}
-
-.toolbar-sort {
-    font-weight: lighten;
-    font-size: 1.4rem;
-    align-items: center;
 }
 
 .MuiMenu-paper {
