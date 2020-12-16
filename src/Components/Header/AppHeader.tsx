@@ -11,26 +11,27 @@ import {AppBar,
   List,
   Divider,
   ListItem,
+  ListItemIcon,
+  ListItemText
 } from '@material-ui/core';
 import clsx from 'clsx';
 
 
-import MenuIcon from '@material-ui/icons/Menu';
-import SearchIcon from '@material-ui/icons/Search';
-import AccountCircle from '@material-ui/icons/AccountCircle';
-import MailIcon from '@material-ui/icons/Mail';
-import NotificationsIcon from '@material-ui/icons/Notifications';
-import MoreIcon from '@material-ui/icons/MoreVert';
-import FormatListNumberedTwoToneIcon from '@material-ui/icons/FormatListNumberedTwoTone';
-import AssessmentTwoToneIcon from '@material-ui/icons/AssessmentTwoTone';
-import AccountBalanceWalletTwoToneIcon from '@material-ui/icons/AccountBalanceWalletTwoTone';
-
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
+import{ 
+  Menu as MenuIcon, 
+  Search, 
+  Mail, 
+  Notifications,
+  More, 
+  FormatListNumberedTwoTone, 
+  AssessmentTwoTone, 
+  AccountBalanceWalletTwoTone,
+  AccountCircle,
+  HomeTwoTone,
+  ListAltTwoTone
+} from '@material-ui/icons';
 
 import "./AppHeader.scss"
-import { HomeTwoTone, ListAltTwoTone } from '@material-ui/icons';
-
 
 export default function AppHeader() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -92,7 +93,7 @@ export default function AppHeader() {
       <MenuItem>
         <IconButton aria-label="show 4 new mails" color="inherit">
           <Badge badgeContent={4} color="secondary">
-            <MailIcon />
+            <Mail />
           </Badge>
         </IconButton>
         <p>Messages</p>
@@ -100,7 +101,7 @@ export default function AppHeader() {
       <MenuItem>
         <IconButton aria-label="show 11 new notifications" color="inherit">
           <Badge badgeContent={11} color="secondary">
-            <NotificationsIcon />
+            <Notifications />
           </Badge>
         </IconButton>
         <p>Notifications</p>
@@ -141,7 +142,7 @@ export default function AppHeader() {
           </Typography>
           <div className="search">
             <div className="searchIcon">
-              <SearchIcon />
+              <Search />
             </div>
             <InputBase
               placeholder="Search…"
@@ -153,12 +154,12 @@ export default function AppHeader() {
           <div className="sectionDesktop">
             <IconButton aria-label="show 4 new mails" color="inherit">
               <Badge badgeContent={4} color="secondary">
-                <MailIcon />
+                <Mail />
               </Badge>
             </IconButton>
             <IconButton aria-label="show 17 new notifications" color="inherit">
               <Badge badgeContent={17} color="secondary">
-                <NotificationsIcon />
+                <Notifications />
               </Badge>
             </IconButton>
             <IconButton
@@ -180,7 +181,7 @@ export default function AppHeader() {
               onClick={handleMobileMenuOpen}
               color="inherit"
             >
-              <MoreIcon />
+              <More />
             </IconButton>
           </div>
         </Toolbar>
@@ -214,18 +215,18 @@ export default function AppHeader() {
               <ListItemText primary="List ToDos" />
             </ListItem>
             <ListItem button>
-              <ListItemIcon><FormatListNumberedTwoToneIcon/></ListItemIcon>
+              <ListItemIcon><FormatListNumberedTwoTone/></ListItemIcon>
               <ListItemText primary="List Targets" />
             </ListItem>
         </List>
         <Divider />
         <List>
             <ListItem button>
-              <ListItemIcon><AssessmentTwoToneIcon/></ListItemIcon>
+              <ListItemIcon><AssessmentTwoTone/></ListItemIcon>
               <ListItemText primary="Cost Statistics" />
             </ListItem>
             <ListItem button>
-              <ListItemIcon><AccountBalanceWalletTwoToneIcon/></ListItemIcon>
+              <ListItemIcon><AccountBalanceWalletTwoTone/></ListItemIcon>
               <ListItemText primary="Wallet" />
             </ListItem>
 
@@ -233,4 +234,4 @@ export default function AppHeader() {
       </Drawer>
     </div>
   );
-}
+} 
