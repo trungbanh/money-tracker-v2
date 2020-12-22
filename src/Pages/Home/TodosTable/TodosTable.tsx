@@ -27,7 +27,7 @@ const colummField = [
 ]
 
 
-function TodosTable() {
+function TodosTable({onTodoClick} : any) {
 
   const [data, setData]: any = useState();
 
@@ -50,7 +50,12 @@ function TodosTable() {
       {data &&
         <DataGrid
           onRowClick={(item)=>{
-            console.log(item.data.id);
+            onTodoClick({
+              type:'ROW_CLICK',
+              payload: {
+                row: Object.assign({}, item.data)
+              }
+            })
           }}
           columns={colummField}
           rows={data?.rows}
